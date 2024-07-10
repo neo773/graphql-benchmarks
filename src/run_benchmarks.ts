@@ -40,7 +40,7 @@ async function runBenchmark(serviceScript: string) {
 
   execCommandBackground("bash", [serviceScript]);
 
-  await sleep(15000);
+  await sleep(10000);
 
   let graphqlEndpoint = "http://localhost:8000/graphql";
   if (serviceScript.includes("hasura")) {
